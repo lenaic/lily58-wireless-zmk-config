@@ -58,11 +58,11 @@
 
             label = "Lower";
             bindings = <
-&enter_lorem_ipsum  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                            &kp F6          &kp F7     &kp F8           &kp F9                &kp F10                &kp ESCAPE
-&lorem_ipsum        &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                       &kp CARET       &kp AMPS   &kp KP_ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&trans              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp MINUS       &kp EQUAL  &kp GRAVE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&trans              &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F11    &kp F12  &kp UNDERSCORE  &kp PLUS   &kp TILDE        &kp LBRC              &kp RBRC               &trans
-                                                &trans        &trans        &trans        &trans     &trans   &trans          &trans     &trans
+&enter_lorem_ipsum  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                          &kp F6          &kp F7     &kp F8           &kp F9                &kp F10                &kp ESCAPE
+&lorem_ipsum        &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                                     &kp CARET       &kp AMPS   &kp KP_ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&trans              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                    &kp MINUS       &kp EQUAL  &kp GRAVE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+&trans              &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp LC(K_POWER)    &kp LG(SPACE)  &kp UNDERSCORE  &kp PLUS   &kp TILDE        &kp LBRC              &kp RBRC               &trans
+                                                &trans        &trans        &trans        &trans             &trans         &trans          &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
