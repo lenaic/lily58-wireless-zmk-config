@@ -81,7 +81,7 @@
 &trans  &trans          &trans      &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))                    &trans             &trans            &trans             &trans            &trans         &kp F12
 &trans  &kp F1          &kp F2      &kp F3                &kp F4                &kp F5                                  &kp F6             &kp F7            &kp F8             &kp F9            &kp F10        &kp F11
 &trans  &kp LEFT_SHIFT  &kp LCTRL   &kp LEFT_ALT          &kp LEFT_COMMAND      &trans                                  &kp LEFT           &kp DOWN          &kp UP             &kp RIGHT         &kp BSPC       &kp DEL
-&trans  &kp K_PREVIOUS  &kp K_NEXT  &kp K_VOLUME_DOWN     &kp K_VOLUME_UP       &kp K_PLAY_PAUSE      &trans    &trans  &kp LC(LA(ENTER))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(LA(BSPC))  &kp LC(LA(C))  &kp LC(LA(X))
+&trans  &kp C_PREV      &kp C_NEXT  &kp K_VOLUME_DOWN     &kp K_VOLUME_UP       &kp C_PLAY_PAUSE      &trans    &trans  &kp LC(LA(ENTER))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(LA(BSPC))  &kp LC(LA(C))  &kp LC(LA(X))
                                     &trans                &trans                &trans                &trans    &trans  &trans             &trans            &trans
             >;
 
