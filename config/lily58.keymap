@@ -13,6 +13,7 @@
         enter_lorem_ipsum: enter_lorem_ipsum {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-time = <0>;
             bindings = <&none &kp LS(F) &kp O &kp X &kp SPACE &kp LS(A) &kp R &kp C &kp H &kp I &kp P &kp E &kp L &kp A &kp G &kp O &kp RET>;
             label = "ENTER_LOREM_IPSUM";
         };
@@ -20,6 +21,7 @@
         lorem_ipsum: lorem_ipsum {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-time = <0>;
             bindings = <&none &kp LS(F) &kp O &kp X &kp SPACE &kp LS(A) &kp R &kp C &kp H &kp I &kp P &kp E &kp L &kp A &kp G &kp O>;
             label = "LOREM_IPSUM";
         };
