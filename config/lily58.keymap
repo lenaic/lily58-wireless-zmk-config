@@ -42,11 +42,11 @@
 
             label = "Base";
             bindings = <
-&kp GRAVE      &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                             &kp N6    &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB        &kp Q   &kp W   &kp E     &kp R     &kp T                              &kp Y     &kp U   &kp I      &kp O    &kp P     &kp BSPC
-&mt LCTRL ESC  &kp A   &kp S   &kp D     &kp F     &kp G                              &kp H     &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z   &kp X   &kp C     &kp V     &kp B   &none           &none      &kp N     &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                               &kp LALT  &kp LGUI  &mo 1   &lt 2 RETURN    &kp SPACE  &kp BSPC  &mo 2   &mo 3
+&kp GRAVE      &kp N1        &kp N2  &kp N3     &kp N4    &kp N5                                &kp N6    &kp N7  &kp N8     &kp N9   &kp N0          &kp MINUS
+&kp TAB        &kp Q         &kp W   &kp E      &kp R     &kp T                                 &kp Y     &kp U   &kp I      &kp O    &kp P           &kp BSPC
+&mt LCTRL ESC  &kp A         &kp S   &kp D      &kp F     &kp G                                 &kp H     &kp J   &kp K      &kp L    &kp SEMI        &kp SQT
+&mo 1          &mt LSHIFT Z  &kp X   &kp C      &kp V     &kp B     &none          &none        &kp N     &kp M   &kp COMMA  &kp DOT  &mt RSHFT FSLH  &kp RETURN
+                                     &kp LCTRL  &kp LALT  &kp LGUI  &lt 2 SPACE    &lt 1 SPACE  &kp BSPC  &mo 2   &mo 3
             >;
         };
 
@@ -66,8 +66,6 @@
 &trans              &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp LC(K_POWER)    &kp LG(SPACE)  &kp UNDERSCORE  &kp PLUS   &kp TILDE        &kp LBRC              &kp RBRC               &trans
                                                 &trans        &trans        &trans        &trans             &trans         &trans          &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -80,14 +78,12 @@
 
             label = "Raise";
             bindings = <
-&trans  &trans          &trans      &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))                             &trans             &trans            &trans             &trans            &trans         &kp F12
-&trans  &kp F1          &kp F2      &kp F3                &kp F4                &kp F5                                           &kp F6             &kp F7            &kp F8             &kp F9            &kp F10        &kp F11
-&trans  &kp LEFT_SHIFT  &kp LCTRL   &kp LEFT_ALT          &kp LEFT_COMMAND      &kp LC(LA(LG(F2)))                               &kp LEFT           &kp DOWN          &kp UP             &kp RIGHT         &kp BSPC       &kp DEL
-&trans  &kp C_PREV      &kp C_NEXT  &kp K_VOLUME_DOWN     &kp K_VOLUME_UP       &kp C_PLAY_PAUSE      &kp LG(TAB)    &kp LG(F2)  &kp LC(LA(ENTER))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(LA(BSPC))  &kp LC(LA(C))  &kp LC(LA(X))
-                                    &trans                &trans                &trans                &trans         &trans      &trans             &trans            &trans
+&trans  &trans          &trans      &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))                                    &trans             &trans            &trans             &trans            &trans         &kp F12
+&trans  &kp F1          &kp F2      &kp F3                &kp F4                &kp F5                                                  &kp F6             &kp F7            &kp F8             &kp F9            &kp F10        &kp F11
+&trans  &kp LEFT_SHIFT  &kp LCTRL   &kp LEFT_ALT          &kp LEFT_COMMAND      &kp LC(LA(LG(F2)))                                      &kp LEFT           &kp DOWN          &kp UP             &kp RIGHT         &kp BSPC       &kp DEL
+&trans  &kp C_PREV      &kp C_NEXT  &kp K_VOLUME_DOWN     &kp K_VOLUME_UP       &kp C_PLAY_PAUSE      &kp LG(TAB)    &kp LC(LS(SPACE))  &kp LC(LA(ENTER))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(LA(BSPC))  &kp LC(LA(C))  &kp LC(LA(X))
+                                    &trans                &trans                &trans                &trans         &trans             &trans             &trans            &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         bluetooth {
