@@ -29,6 +29,18 @@
         };
     };
 
+    behaviors {
+        mod_tap_balanced: mod_tap_balanced {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_BALANCED";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -42,11 +54,11 @@
 
             label = "Base";
             bindings = <
-&kp GRAVE      &kp N1            &kp N2  &kp N3     &kp N4    &kp N5                                &kp N6                &kp N7      &kp N8     &kp N9   &kp N0                &mo 3
-&kp TAB        &kp Q             &kp W   &kp E      &kp R     &kp T                                 &kp Y                 &kp U       &kp I      &kp O    &kp P                 &kp BSPC
-&mt LCTRL ESC  &mt LEFT_SHIFT A  &kp S   &kp D      &kp F     &kp G                                 &kp H                 &kp J       &kp K      &kp L    &mt RIGHT_SHIFT SEMI  &kp SQT
-&mo 2          &kp Z             &kp X   &kp C      &kp V     &kp B     &none          &none        &kp N                 &kp M       &kp COMMA  &kp DOT  &kp FSLH              &kp RETURN
-                                         &kp LCTRL  &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &mt RIGHT_SHIFT BSPC  &kp RETURN  &mo 1
+&kp GRAVE      &kp N1                     &kp N2  &kp N3     &kp N4    &kp N5                                &kp N6    &kp N7      &kp N8     &kp N9   &kp N0                         &mo 3
+&kp TAB        &kp Q                      &kp W   &kp E      &kp R     &kp T                                 &kp Y     &kp U       &kp I      &kp O    &kp P                          &kp RETURN
+&mt LCTRL ESC  &mod_tap_balanced LSHFT A  &kp S   &kp D      &kp F     &kp G                                 &kp H     &kp J       &kp K      &kp L    &mod_tap_balanced RSHIFT SEMI  &kp SQT
+&mo 2          &kp Z                      &kp X   &kp C      &kp V     &kp B     &none          &none        &kp N     &kp M       &kp COMMA  &kp DOT  &kp FSLH                       &kp RETURN
+                                                  &kp LCTRL  &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp BSPC  &kp RSHIFT  &mo 1
             >;
         };
 
