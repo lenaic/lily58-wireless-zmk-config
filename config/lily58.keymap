@@ -72,11 +72,11 @@
 
             label = "Lower";
             bindings = <
-&enter_lorem_ipsum  &kp LC(LA(LG(F3)))  &kp LC(LA(LG(F4)))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))                                        &kp C_PP        &kp K_VOLUME_DOWN  &kp K_VOL_UP     &kp C_PREV            &kp C_NEXT             &kp ESCAPE
-&lorem_ipsum        &kp EXCL            &kp AT              &kp HASH              &kp DOLLAR            &kp PERCENT                                           &kp CARET       &kp AMPS           &kp KP_ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp N0              &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3          &kp NUMBER_4          &kp LC(LA(LG(F2)))                                    &kp MINUS       &kp EQUAL          &kp GRAVE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp N5              &kp NUMBER_6        &kp NUMBER_7        &kp NUMBER_8          &kp NUMBER_9          &kp NUMBER_0        &kp LG(TAB)    &kp LC(LS(SPACE))  &kp UNDERSCORE  &kp PLUS           &kp TILDE        &kp LBRC              &kp RBRC               &trans
-                                                            &trans                &trans                &trans              &trans         &kp RETURN         &kp BSPC        &trans             &trans
+&enter_lorem_ipsum  &kp LG(MINUS)  &kp LG(PLUS)  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))                                    &kp C_PP        &kp K_VOLUME_DOWN  &kp K_VOL_UP     &kp C_PREV            &kp C_NEXT             &kp ESCAPE
+&lorem_ipsum        &kp EXCL       &kp AT        &kp HASH              &kp DOLLAR            &kp PERCENT                                       &kp CARET       &kp AMPS           &kp KP_ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp LC(LA(LG(F2)))  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4          &kp N5                                            &kp MINUS       &kp EQUAL          &kp GRAVE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+&kp LG(GRAVE)       &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9          &kp NUMBER_0    &kp LG(TAB)    &kp LC(LS(SPACE))  &kp UNDERSCORE  &kp PLUS           &kp TILDE        &kp LBRC              &kp RBRC               &trans
+                                                 &trans                &trans                &trans          &trans         &kp RETURN         &kp BSPC        &trans             &trans
             >;
         };
 
