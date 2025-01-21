@@ -54,11 +54,11 @@
 
             label = "Base";
             bindings = <
-&kp GRAVE      &kp N1                     &kp N2  &kp N3     &kp N4    &kp N5                                &kp N6    &kp N7      &kp N8     &kp N9   &kp N0                         &mo 3
+&kp GRAVE      &kp N1                     &kp N2  &kp N3     &kp N4    &kp N5                                &kp N6    &kp N7      &kp N8     &kp N9   &kp N0                         &kp ESCAPE
 &kp TAB        &kp Q                      &kp W   &kp E      &kp R     &kp T                                 &kp Y     &kp U       &kp I      &kp O    &kp P                          &kp BACKSLASH
 &mt LCTRL ESC  &mod_tap_balanced LSHFT A  &kp S   &kp D      &kp F     &kp G                                 &kp H     &kp J       &kp K      &kp L    &mod_tap_balanced RSHIFT SEMI  &kp SQT
-&mo 2          &kp Z                      &kp X   &kp C      &kp V     &kp B     &mo 3          &none        &kp N     &kp M       &kp COMMA  &kp DOT  &kp FSLH                       &kp RETURN
-                                                  &kp LCTRL  &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp BSPC  &kp RSHIFT  &mo 1
+&mo 2          &kp Z                      &kp X   &kp C      &kp V     &kp B     &mo 3          &trans       &kp N     &kp M       &kp COMMA  &kp DOT  &kp FSLH                       &kp RETURN
+                                                  &kp LCTRL  &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp BSPC  &kp RSHIFT  &mo 3
             >;
         };
 
@@ -72,11 +72,11 @@
 
             label = "Lower";
             bindings = <
-&enter_lorem_ipsum  &kp LG(MINUS)  &kp LG(PLUS)  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))                                    &kp C_PP        &kp K_VOLUME_DOWN  &kp K_VOL_UP     &kp C_PREV            &kp C_NEXT             &kp ESCAPE
-&lorem_ipsum        &kp EXCL       &kp AT        &kp HASH              &kp DOLLAR            &kp PERCENT                                       &kp CARET       &kp AMPS           &kp KP_ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp LC(LA(LG(F2)))  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4          &kp N5                                            &kp MINUS       &kp EQUAL          &kp GRAVE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp LG(GRAVE)       &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9          &kp NUMBER_0    &kp LG(TAB)    &kp LC(LS(SPACE))  &kp UNDERSCORE  &kp PLUS           &kp TILDE        &kp LBRC              &kp RBRC               &trans
-                                                 &trans                &trans                &trans          &trans         &kp RETURN         &kp BSPC        &trans             &trans
+&kp LG(GRAVE)       &kp LG(MINUS)  &kp LG(PLUS)  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))                                     &kp C_PP        &kp K_VOLUME_DOWN  &kp K_VOL_UP     &kp C_PREV            &kp C_NEXT             &kp ESCAPE
+&kp LG(TAB)         &kp EXCL       &kp AT        &kp HASH              &kp DOLLAR            &kp PERCENT                                        &kp CARET       &kp AMPS           &kp KP_ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp LC(LA(LG(F2)))  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4          &kp N5                                             &kp MINUS       &kp EQUAL          &kp GRAVE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+&kp SQT             &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9          &kp NUMBER_0    &kp LG(SPACE)    &kp GREATER_THAN  &kp UNDERSCORE  &kp PLUS           &kp TILDE        &kp LBRC              &kp RBRC               &kp DOUBLE_QUOTES
+                                                 &trans                &trans                &trans          &trans           &kp SPACE         &kp BSPC        &trans             &trans
             >;
         };
 
@@ -90,18 +90,18 @@
 
             label = "Raise";
             bindings = <
-&enter_lorem_ipsum  &kp LC(LA(LG(F3)))  &kp LC(LA(LG(F4)))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))                                    &kp C_PP           &kp K_VOL_DN      &kp K_VOL_UP       &kp C_PREV        &kp C_NEXT     &kp F12
-&lorem_ipsum        &kp F1              &kp F2              &kp F3                &kp F4                &kp F5                                                  &kp F6             &kp F7            &kp F8             &kp F9            &kp F10        &kp F11
-&kp LC(K_POWER)     &kp LEFT_SHIFT      &kp LCTRL           &kp LEFT_ALT          &kp LEFT_COMMAND      &kp LC(LA(LG(F2)))                                      &kp LEFT           &kp DOWN          &kp UP             &kp RIGHT         &kp BSPC       &kp DEL
-&trans              &kp LG(Z)           &kp LG(X)           &kp LG(C)             &kp LG(V)             &kp K_MUTE            &kp LG(TAB)    &kp LC(LS(SPACE))  &kp LC(LA(ENTER))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(LA(BSPC))  &kp LC(LA(C))  &kp LC(LA(X))
-                                                            &trans                &trans                &trans                &kp RETURN     &trans             &trans             &trans            &trans
+&kp LG(GRAVE)    &kp LC(LA(LG(F3)))  &kp LC(LA(LG(F4)))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))                                      &kp C_PP           &kp K_VOL_DN      &kp K_VOL_UP       &kp C_PREV        &kp C_NEXT     &kp F12
+&kp LG(TAB)      &kp F1              &kp F2              &kp F3                &kp F4                &kp F5                                                    &kp F6             &kp F7            &kp F8             &kp F9            &kp F10        &kp F11
+&kp LC(K_POWER)  &kp LEFT_SHIFT      &kp LCTRL           &kp LEFT_ALT          &kp LEFT_COMMAND      &kp LC(LA(LG(F2)))                                        &kp LEFT           &kp DOWN          &kp UP             &kp RIGHT         &kp BSPC       &kp DEL
+&trans           &kp LG(Z)           &kp LG(X)           &kp LG(C)             &kp LG(V)             &kp K_MUTE            &kp LG(SPACE)    &kp LC(LS(SPACE))  &kp LC(LA(ENTER))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(LA(BSPC))  &kp LC(LA(C))  &kp LC(LA(X))
+                                                         &trans                &trans                &trans                &kp SPACE        &trans             &trans             &trans            &trans
             >;
         };
 
         bluetooth {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp BACKSPACE  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &kp N7         &kp N8        &kp N9         &kp KP_SUBTRACT  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp BACKSPACE  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans  &enter_lorem_ipsum
+&trans      &trans        &trans        &trans        &trans        &trans                          &kp N7         &kp N8        &kp N9         &kp KP_SUBTRACT  &trans  &lorem_ipsum
 &trans      &trans        &trans        &trans        &trans        &trans                          &kp N4         &kp N5        &kp N6         &kp KP_PLUS      &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &kp N1         &kp N2        &kp N3         &trans           &trans  &kp RET
                                         &trans        &trans        &trans        &trans    &trans  &kp N0         &kp PERIOD    &trans
